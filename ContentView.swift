@@ -99,9 +99,7 @@ func binarySearch<T: Comparable>(in array: [T], for value: T) -> Int? {
                         .keyboardType(.numberPad)
                     
                     Button(action: {
-                        let sorted: () = bubbleSort(&simArray1)
-                        print(sorted)
-                        binarySearch(in: [sorted], for: $searchTerm)
+                        // Add search logic
                     }, label: {
                         Text("Run Search")
                     })
